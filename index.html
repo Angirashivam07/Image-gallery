@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="art.jfif" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="art.jfif" height="400px" onclick="openFullImg(this.src)">
+        <img src="Peacock-feather.jpg" height="400px" onclick="openFullImg(this.src)">
+        <img src="trees.jfif" height="400px" onclick="openFullImg(this.src)">
+        <img src="sunrise.jfif" height="400px" onclick="openFullImg(this.src)">
+        <img src="view.jfif" height="400px" onclick="openFullImg(this.src)">
+        <img src="sea.jfif" height="400px" onclick="openFullImg(this.src)">
+        <img src="my space.webp" height="400px"onclick="openFullImg(this.src)">
+        <img src="flower.jfif" height="400px"onclick="openFullImg(this.src)">
+    </div>
+    <script>
+        var FullImgBox = document.getElementById("fullImgBox");
+        var FullImgBox = document.getElementById("fullImg");
+        function openFullImg(pic){
+            fullImgBox.style.display ="flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";        
+        }
+    </script>
+</body>
+</html>
